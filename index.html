@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4efdf"><meta name="description" content="AI가 스스로 비평하고 수정한 농담은 실제 인간에게도 더 웃길까? 여덟 쌍의 농담을 블라인드로 비교합니다.">
+  <title>이게 어디가 웃긴데? — Where's the Joke?</title><link rel="stylesheet" href="style.css"><script defer src="data/jokes.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="wordmark" href="#top">COMEDY<span>GYM</span></a><span class="edition">WIP / WEEK 08</span><a href="#archive" class="archive-link">작업 노트 ↘</a></header>
+  <main id="top">
+    <section id="intro" class="screen intro-screen">
+      <div class="eyebrow"><span class="red-dot"></span> 인간 × AI 웃김 판단 실험 <span class="rule"></span> 01—08</div>
+      <h1>이게 어디가<br><em>웃긴데?</em></h1>
+      <p class="english-title">WHERE'S THE JOKE?</p>
+      <div class="intro-bottom"><div><p class="question-label">질문</p><p class="question">AI가 스스로 비평하고 수정한 농담은 실제 인간에게도 더 웃길까?</p></div><div class="intro-copy"><p>같은 소재의 기존 농담과 AI가 셀프 비평 후 수정한 농담을 준비했습니다.<br>먼저 어느 쪽이 더 웃긴지 판단하고, 선택 뒤 작업 과정을 확인해 주세요.</p><button id="start" class="button primary">개그 평가 시작하기 <span>↗</span></button></div></div>
+      <p class="margin-note">웃음은 측정값이 아니라<br>당신의 판단으로 시작됩니다.</p>
+    </section>
+    <section id="test" class="screen test-screen" hidden>
+      <div class="section-head"><div><p class="eyebrow">BLIND TEST <span class="rule"></span> <span id="progress">01 / 04</span></p><h2>어느 쪽이<br class="mobile-only"> 더 웃긴가요?</h2></div><button id="back" class="text-button">← 처음으로</button></div>
+      <p id="topic" class="topic-tag"></p><div id="jokeCards" class="joke-grid"></div>
+      <fieldset class="choice-field"><legend>당신의 판정</legend><div class="choice-row"><button class="choice" data-choice="A">A가 더 웃기다 <span>↗</span></button><button class="choice" data-choice="B">B가 더 웃기다 <span>↗</span></button><button class="choice" data-choice="none">둘 다 재미없다 <span>↗</span></button></div></fieldset>
+      <div class="reason-wrap"><label for="reason">둘 다 재미없다면, 무엇이 문제였나요? <small>선택 사항</small></label><select id="reason"><option value="">선택하지 않음</option><option>반전이 뻔하다</option><option>소재나 발상이 재미없다</option><option>비유나 연결이 억지스럽다</option><option>설명이 너무 길다</option><option>기타 / 잘 모르겠다</option></select><label for="note" class="sr-only">덧붙일 말</label><textarea id="note" rows="2" maxlength="500" placeholder="하고 싶은 말이 있다면 (선택 사항)"></textarea></div>
+      <p class="privacy-note">기록은 이 브라우저의 localStorage에만 저장됩니다. 다른 관객의 평가와 공유되거나 서버로 전송되지 않습니다.</p>
+    </section>
+    <section id="reveal" class="screen reveal-screen" hidden aria-live="polite"></section>
+    <section id="archive" class="archive" hidden>
+      <div class="archive-title"><p class="eyebrow">BEHIND THE SET <span class="rule"></span> 작업 노트</p><h2>웃음과 비평 사이</h2><p>모순을 찾는 것과 웃음을 만드는 것은 같은 일일까?</p></div>
+      <div class="archive-body"><p>이번 비교는 같은 소재의 기존 농담과 AI 셀프 비평 후 수정본을 블라인드로 평가합니다. 수정본에는 소재를 바로잡거나, 펀치라인을 바꾸거나, 풍자의 대상을 이동한 변화가 포함됩니다.</p><p>종교 풍자는 관객의 신앙과 경험, 공연 장소에 따라 웃음과 불편함이 달라질 수 있습니다. 농담 구조의 개선과 실제 웃음은 별개의 판단입니다.</p><p>현재 평가는 이 브라우저에만 저장됩니다. 실제 관객 데이터가 모이지 않은 상태에서 특정 원고의 보편적 우위나 AI 모델 전체의 능력을 결론 내리지 않습니다.</p><p class="archive-foot">응답은 개인 브라우저에 저장됩니다. 서버로 전송하거나 관객 전체 결과로 합산하지 않습니다.</p></div>
+    </section>
+  </main>
+  <footer><span>COMEDYGYM · WIP 08</span><span>웃겼는지, 아닌지. 그 판단은 당신에게.</span><a href="#top">위로 ↑</a></footer>
+</body></html>
